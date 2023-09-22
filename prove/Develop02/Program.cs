@@ -5,9 +5,9 @@ class Program
     static void Main(string[] args)
     {
         //EXEEDING REQUIREMENTS: 
-        //Input validation on the menu selection to prevent a misstype from crashing the program. (Trycatch from 25 to 33)
-        //I made it so the user will not see the same prompt twice in row. (67 to 81)
-        //I supplied a default file name and the user needs only to press enter to use it, or supply their own desired file name. (39 to 44 and  51 to 56)
+        //Input validation on the menu selection to prevent a misstype from crashing the program. (Trycatch from 25 to 33) And added exeption handling to load menu option (46 to 53)
+        //I made it so the user will not see the same prompt twice in row. (75 to 88)
+        //I supplied a default file name and the user needs only to press enter to use it, or supply their own desired file name. (39 to 44 and  59 to 64)
         Console.WriteLine("\nWelcome to your journal\n");
         
         Journal journal = new Journal();
@@ -36,14 +36,22 @@ class Program
             if(userChoice == 1)
             {
                 //load journal from file 
-                Console.Write("\nWhat file name yould you like to load from(Enter to use Default 'myjournal.txt')? ");
+                Console.Write("\nWhat file name yould you like to load from(Enter to use 'myjournal.txt')? ");
                 string userFileName = Console.ReadLine();
                 if(userFileName != "")
                 {
                     journalFileName = userFileName;
                 }
-                Console.WriteLine($"\nJournal loaded from {journalFileName}.\n");
-                journal.ReadFromFile(journalFileName);
+                
+                try
+                {
+                    journal.ReadFromFile(journalFileName);
+                    Console.WriteLine($"\nJournal loaded from {journalFileName}.\n");
+                }catch(Exception)
+                {
+                    Console.WriteLine("\nOops! Something went wrong make sure the file you are trying to load exists and you typed the name correctly. Please try again.\n");
+                }
+                
                 
             }
             else if( userChoice == 2)
