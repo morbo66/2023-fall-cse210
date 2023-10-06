@@ -56,11 +56,11 @@ class Program
                 Thread.Sleep(1000);
             }
         }
-        Console.WriteLine("Your results:");
+        Console.WriteLine("\nYour results:");
         Console.WriteLine($"Breathing Activity: {breathingTotal} Seconds");
         Console.WriteLine($"Reflection Activity: {reflectionTotal} Seconds");
         Console.WriteLine($"Listing Activity: {listingTotal} Seconds");
-        Console.WriteLine($"For a total of {listingTotal + reflectionTotal + breathingTotal} seconds of mindfulness today!");
+        Console.WriteLine($"For a total of {listingTotal + reflectionTotal + breathingTotal} seconds of mindfulness today!\n");
     
 
     }
