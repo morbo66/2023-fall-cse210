@@ -6,9 +6,10 @@ class Program
 {
     static void Main(string[] args)
     {
-       //EXCEEDING EXPECTATIONS: 
-       //Input validation throughout, Result table at the end of the program showing the user the total time spent on mindfulness.
-        
+        //EXCEEDING EXPECTATIONS: 
+        //Input validation throughout, Result table at the end of the program showing the user the total time spent on mindfulness.
+        //Please note: I didn't use the Activity.ShowCountDown() method in the breathing activity because I felt that activity could use 
+        //a differrent countdown than the other 2.
         
         int breathingTotal = 0;
         int reflectionTotal = 0;
