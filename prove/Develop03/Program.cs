@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        //EXEEDING REQUIREMENTS:
+        //I made a list of scriptures and selected them randomly
+        //The Scripture.HideRandomeWords() only hides undhidden words
+        //Input validation, typing something besides quit or pressing enter doesn't break the program
+
         //Initialize reference
         Reference reference1 = new Reference("Proverbs",3,5,6);
         Reference reference2 = new Reference("John",3,16);

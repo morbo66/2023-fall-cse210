@@ -9,6 +9,6 @@ public class WritingAssignment : Assignment
 
     public string GetWritingInformation()
     {
-        return GetStudent() + " " + _title;
+        return GetStudent() + " - " + _title;
     }
 }
