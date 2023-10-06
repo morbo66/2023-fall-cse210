@@ -1,13 +1,13 @@
 using System;
 using System.Data;
-using System.Security.Cryptography.X509Certificates;
+
 
 class Program
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("Hello Develop04 World!");
-        //Activity a1 = new Activity();
+       //EXCEEDING EXPECTATIONS: 
+       //Input validation throughout, Result table at the end of the program showing the user the total time spent on mindfulness.
         
         
         int breathingTotal = 0;
