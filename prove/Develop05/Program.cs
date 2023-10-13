@@ -12,7 +12,5 @@ class Program
         // call menu goalManager.start() to start program
         goalManager.Start();        
     }
-
-    //input validation method
     
 }
