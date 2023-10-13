@@ -53,7 +53,7 @@ public class GoalManager
         }
     }
 
-    public void DisplayPlayerInfo()
+    private void DisplayPlayerInfo()
     {
         
         string[] ranks = {"Goal Setter", "Goal Getter", "Goal Achiever", "Goal SUPER Acheiver", "Goal Mega Acheiver", "Goal Master", "Goal Dominator"};
@@ -88,7 +88,7 @@ public class GoalManager
         }
     }   
 
-    public void ListGoalNames()
+    private void ListGoalNames()
     {
         Console.WriteLine("The goals are:");
         int i = 1;
@@ -100,7 +100,7 @@ public class GoalManager
         
     }
 
-    public void ListGoalDetails()
+    private void ListGoalDetails()
     {
          Console.Clear();
         Console.WriteLine("Your current goals are:");
@@ -114,7 +114,7 @@ public class GoalManager
         Console.ReadLine();
     }
 
-    public void CreateGoal()
+    private void CreateGoal()
     {
         Console.Clear();
         Console.WriteLine("The types of goals are:");
@@ -146,7 +146,7 @@ public class GoalManager
         }
     }
 
-    public void RecordEvent()
+    private void RecordEvent()
     {
         Console.Clear();
         ListGoalNames();
@@ -164,7 +164,7 @@ public class GoalManager
         
     }
 
-    public void SaveGoals()
+    private void SaveGoals()
     {
         string userFileName = GetStringFromUser($"What is the filename for the goal file(press enter to use default '{_fileName}')? ");
         if (userFileName != "")
@@ -183,7 +183,7 @@ public class GoalManager
 
     }
 
-    public void LoadGoals()
+    private void LoadGoals()
     {
         string userFileName = GetStringFromUser($"What is the filename for the goal file(press enter to use current '{_fileName}')? ");
         if (userFileName != "")
