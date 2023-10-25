@@ -1,10 +1,14 @@
-public abstract class Creature
+public class Creature
 {
     private string _characterName;
     protected int _hitPoints;
     protected int _score;
     protected int _armor;
     protected int _attackValue;
+    public Creature()
+    {
+
+    }
     public Creature(string name)
     {
         _characterName = name;
@@ -15,7 +19,10 @@ public abstract class Creature
     {
         return _attackValue;
     }
-    public abstract int GetDamage();
+    public virtual int GetDamage()
+    {
+        return 0;
+    }
     public virtual bool IsRanged()
     {
         return false;
@@ -31,6 +38,10 @@ public abstract class Creature
     public string GetCharacterInfo()
     {
         return _characterName + " " + _hitPoints + " " + _score;
+    }
+    public int GetScore()
+    {
+        return _score;
     }
     public bool IsAlive()
     {

@@ -1,6 +1,6 @@
 public class StringPuzzle : Puzzle
 {
-    string _answer;
+    private string _answer;
 
     public StringPuzzle(string answer, string flavor, string puzzle, int failDamage, int successScore) : base (flavor, puzzle, failDamage, successScore)
     {

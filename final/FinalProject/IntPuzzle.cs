@@ -1,6 +1,6 @@
 public class IntPuzzle : Puzzle
 {
-    int _answer;
+    private int _answer;
 
     public IntPuzzle(int answer, string flavor, string puzzle, int failDamage, int successScore) : base (flavor, puzzle, failDamage, successScore)
     {
