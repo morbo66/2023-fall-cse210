@@ -37,7 +37,7 @@ public class Creature
     }
     public string GetCharacterInfo()
     {
-        return _characterName + " " + _hitPoints + " " + _score;
+        return "Name: " + _characterName + " Hp: " + _hitPoints + " Score:" + _score;
     }
     public int GetScore()
     {
@@ -61,5 +61,13 @@ public class Creature
             _hitPoints -= damage;
         }
         
+    }
+    public void SetHP(int hp)
+    {
+        _hitPoints = hp;
+    }
+    public int GetHP()
+    {
+        return _hitPoints;
     }
 }

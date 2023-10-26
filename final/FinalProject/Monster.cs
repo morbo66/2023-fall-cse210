@@ -16,6 +16,7 @@ public class Monster : Creature
         _hitPoints = hp;
         _introFlavorText = intro;
         _defeatFlavor = defeat;
+        _damage = damage;
     }
     public override int GetDamage()
     {

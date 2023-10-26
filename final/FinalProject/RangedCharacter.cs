@@ -4,7 +4,7 @@ public class RangedCharacter : Creature
     {
         _armor = 8;
         _attackValue = 12;
-        _hitPoints = 20;
+        _hitPoints = 40;
     }
     
    

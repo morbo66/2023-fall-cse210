@@ -5,7 +5,7 @@ public class MeleeCharacter : Creature
     {
         _armor = 10;
         _attackValue = 10;
-        _hitPoints = 25;
+        _hitPoints = 50;
     }
     
    
